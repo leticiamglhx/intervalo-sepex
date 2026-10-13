@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1c101b">
+  <title>Intervalo </title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="timer-card">
+    <div class="workshop"><img class="react-symbol" src="favicon.svg" alt="Logo do React" width="34" height="34"> OFICINA DE REACT</div>
+    <p class="eyebrow">UMA PAUSA PARA RECARREGAR</p>
+    <h1 id="title">Hora do intervalo.</h1>
+    <p id="description" class="description">Estique as pernas, voltamos em alguns minutos.</p>
+    <div class="clock-container">
+      <svg class="progress-ring" viewBox="0 0 320 320" aria-hidden="true">
+        <circle class="ring-track" cx="160" cy="160" r="146" />
+        <circle id="progress" class="ring-progress" cx="160" cy="160" r="146" />
+      </svg>
+      <div class="clock-content">
+        <div id="timer" class="timer" role="timer" aria-label="20 minutos restantes">20:00</div>
+        <span id="status" class="status">PRONTO PARA COMEÇAR</span>
+      </div>
+    </div>
+    <div class="time-settings" role="group" aria-label="Ajustar duração">
+      <button id="decrease" type="button" aria-label="Diminuir um minuto">−</button>
+      <span><strong id="duration-label">20 minutos</strong><small id="settings-hint">Ajuste o tempo antes de iniciar</small></span>
+      <button id="increase" type="button" aria-label="Aumentar um minuto">+</button>
+    </div>
+    <div class="controls">
+      <button id="toggle" class="primary" type="button"><span id="play-icon" aria-hidden="true">▶</span> <span id="toggle-label">Iniciar intervalo</span></button>
+      <button id="reset" class="secondary" type="button" aria-label="Reiniciar contador">↺ <span>Reiniciar</span></button>
+    </div>
+    <p id="announcement" class="announcement" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>
